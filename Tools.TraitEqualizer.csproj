@@ -39,12 +39,10 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Utility\Random.cs" />
     <Compile Include="Core\TraitEqualizer.cs" />
     <Compile Include="Core\TraitList.cs" />
     <Compile Include="Core\TraitElement.cs" />
     <Compile Include="Core\Trait.cs" />
-    <Compile Include="Utility\Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
@@ -54,6 +52,14 @@
       <Project>{4afe5e8c-29c0-4389-aaa0-55584146becf}</Project>
       <Name>Tools.Extensions</Name>
       <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Random\Tools.Random.csproj">
+      <Project>{f4c8a01e-9df7-4e31-8169-1cf24d2896e7}</Project>
+      <Name>Tools.Random</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Tools.Utility.csproj">
+      <Project>{96d2cdb1-5ee9-4666-812d-9ecb8df005c4}</Project>
+      <Name>Tools.Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
