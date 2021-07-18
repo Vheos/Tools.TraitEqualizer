@@ -4,7 +4,7 @@ using System.Linq;
 
 
 
-namespace Vheos.TraitEqualizer
+namespace Vheos.Tools.TraitEqualizer
 {
     public class TraitList<T>
     {

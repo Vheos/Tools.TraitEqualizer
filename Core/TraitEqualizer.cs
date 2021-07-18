@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Vheos.Tools.UtilityNS;
+using Vheos.Tools.RandomNS;
 
 
-namespace Vheos.TraitEqualizer
+namespace Vheos.Tools.TraitEqualizer
 {
     public class TraitEqualizer<T>
     {
