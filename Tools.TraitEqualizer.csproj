@@ -39,10 +39,10 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\TraitEqualizer.cs" />
-    <Compile Include="Core\TraitList.cs" />
-    <Compile Include="Core\TraitElement.cs" />
-    <Compile Include="Core\Trait.cs" />
+    <Compile Include="TraitEqualizer.cs" />
+    <Compile Include="TraitList.cs" />
+    <Compile Include="TraitElement.cs" />
+    <Compile Include="Trait.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-
-
-namespace Vheos.Tools.TraitEqualizer
+﻿namespace Vheos.Tools.TraitEqualizer
 {
+    using System;
     public class Trait<T>
     {
         // Publics

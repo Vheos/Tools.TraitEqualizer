@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Vheos.Tools.UtilityNS;
-using Vheos.Tools.RandomNS;
-
-
-namespace Vheos.Tools.TraitEqualizer
+﻿namespace Vheos.Tools.TraitEqualizer
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using Vheos.Tools.UtilityNS;
+    using Vheos.Tools.RandomNS;
     public class TraitEqualizer<T>
     {
         // Publics
