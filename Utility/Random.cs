@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Vheos.Extensions.Math;
+using Vheos.Tools.Extensions.Math;
 
 
 
