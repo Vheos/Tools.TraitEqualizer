@@ -3,8 +3,8 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Vheos.Tools.UtilityNS;
-    using Vheos.Tools.RandomNS;
+    using UtilityNS;
+    using RandomNS;
     public class TraitEqualizer<T>
     {
         // Publics
