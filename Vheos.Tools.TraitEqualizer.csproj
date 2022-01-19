@@ -8,41 +8,22 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Vheos.Tools.TraitEqualizer</RootNamespace>
     <AssemblyName>Vheos.Tools.TraitEqualizer</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '-|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
     <OutputPath>bin\-\</OutputPath>
-    <DefineConstants>
-    </DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>bin\-\Vheos.Tools.TraitEqualizer.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RELEASE|AnyCPU'">
-    <OutputPath>bin\RELEASE\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <LangVersion>9.0</LangVersion>
     <Optimize>true</Optimize>
-    <DocumentationFile>bin\RELEASE\Vheos.Tools.TraitEqualizer.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="TraitEqualizer.cs" />
-    <Compile Include="TraitList.cs" />
-    <Compile Include="TraitElement.cs" />
-    <Compile Include="Trait.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
@@ -61,6 +42,12 @@
       <Project>{96d2cdb1-5ee9-4666-812d-9ecb8df005c4}</Project>
       <Name>Vheos.Tools.Utility</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Trait.cs" />
+    <Compile Include="Code\TraitElement.cs" />
+    <Compile Include="Code\TraitEqualizer.cs" />
+    <Compile Include="Code\TraitList.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
