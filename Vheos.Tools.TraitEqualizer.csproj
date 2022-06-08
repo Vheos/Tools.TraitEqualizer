@@ -12,20 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
+    <LangVersion>10.0</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == '-|AnyCPU' ">
     <OutputPath>bin\-\</OutputPath>
     <DocumentationFile>bin\-\Vheos.Tools.TraitEqualizer.xml</DocumentationFile>
     <DefineConstants>DEBUG</DefineConstants>
-    <LangVersion>9.0</LangVersion>
-    <Optimize>true</Optimize>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\GlobalUsings.cs" />
     <Compile Include="Code\Trait.cs" />
     <Compile Include="Code\TraitElement.cs" />
     <Compile Include="Code\TraitEqualizer.cs" />
@@ -35,13 +36,9 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Random\Vheos.Tools.Random.csproj">
-      <Project>{f4c8a01e-9df7-4e31-8169-1cf24d2896e7}</Project>
-      <Name>Vheos.Tools.Random</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Utilities\Vheos.Tools.Utilities.csproj">
+    <ProjectReference Include="..\Utilities\Vheos.Helpers.csproj">
       <Project>{96d2cdb1-5ee9-4666-812d-9ecb8df005c4}</Project>
-      <Name>Vheos.Tools.Utilities</Name>
+      <Name>Vheos.Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
