@@ -23,17 +23,18 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Extensions\Vheos.Tools.Extensions.csproj">
-      <Project>{4afe5e8c-29c0-4389-aaa0-55584146becf}</Project>
-      <Name>Vheos.Tools.Extensions</Name>
-      <Private>True</Private>
-    </ProjectReference>
+    <Compile Include="Code\Trait.cs" />
+    <Compile Include="Code\TraitElement.cs" />
+    <Compile Include="Code\TraitEqualizer.cs" />
+    <Compile Include="Code\TraitList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Random\Vheos.Tools.Random.csproj">
       <Project>{f4c8a01e-9df7-4e31-8169-1cf24d2896e7}</Project>
       <Name>Vheos.Tools.Random</Name>
@@ -42,12 +43,6 @@
       <Project>{96d2cdb1-5ee9-4666-812d-9ecb8df005c4}</Project>
       <Name>Vheos.Tools.Utilities</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Code\Trait.cs" />
-    <Compile Include="Code\TraitElement.cs" />
-    <Compile Include="Code\TraitEqualizer.cs" />
-    <Compile Include="Code\TraitList.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

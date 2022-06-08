@@ -3,7 +3,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using Tools.UtilityN;
+    using Tools.Utilities;
     using RandomN;
     public class TraitEqualizer<T>
     {
